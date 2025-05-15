@@ -7,8 +7,8 @@ import { Toaster } from 'react-hot-toast';
 import Header from "@/components/shared/header";
 import Footer from "@/components/shared/footer";
 export const metadata: Metadata = {
-  title: "Ôn Tập 2K7",
-  description: "Ôn Tập 2K7",
+  title: "20 NĂM - CHUYỂN NGÀNH ĐIỆN TỬ VIỄN THÔNG",
+  description: "20 NĂM - CHUYỂN NGÀNH ĐIỆN TỬ VIỄN THÔNG",
 };
 
 export default async function RootLayout({

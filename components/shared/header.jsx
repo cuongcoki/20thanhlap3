@@ -1,7 +1,7 @@
 "use client";
 
 import logo from "@/public/image/logoKyThuatCongNghiep.png";
-import bgTest from "@/public/image/bannertnut.jpg";
+import bgTest from "@/public/image/bgtnuttt.jpg";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
