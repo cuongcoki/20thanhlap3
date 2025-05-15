@@ -89,12 +89,12 @@ export default function AnniversaryEventPage() {
 
   const speakers = [
     {
-      name: "TS. Nguyễn Văn A",
+      name: "TS. Nguyễn Văn Sáng",
       position: "Trưởng Khoa Điện tử - Viễn thông",
       image: "/api/placeholder/200/200"
     },
     {
-      name: "Kỹ sư Trần Minh B",
+      name: "Nhật Mai Sơn",
       position: "CEO Công ty Viễn thông ABC",
       image: "/api/placeholder/200/200"
     },

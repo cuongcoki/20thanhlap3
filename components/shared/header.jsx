@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { itemCardHeader, itemNavbar } from "@/lib/index.js";
 import { Card, CardContent, CardDescription, CardTitle } from "../ui/card";
 import { useIsMobile } from "@/hooks/use-mobile";
-
+import { usePathname } from "next/navigation";
 // Color constants
 const COLORS = {
     primary: "#2e5288",   // Dark blue
@@ -23,7 +23,9 @@ export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const isMobile = useIsMobile();
+    const pathname = usePathname();
 
+    console.log(pathname)
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 10) {
@@ -52,8 +54,8 @@ export default function Header() {
                 {/* Top Navigation Bar */}
                 <div
                     className={`w-full transition-all duration-300 ${isScrolled
-                            ? "fixed top-0 left-0 right-0 z-50 bg-white shadow-md"
-                            : `absolute top-0 left-0 right-0 z-50 bg-opacity-90`
+                        ? "fixed top-0 left-0 right-0 z-50 bg-white shadow-md"
+                        : `absolute top-0 left-0 right-0 z-50 bg-opacity-90`
                         }`}
                     style={{
                         backgroundColor: isScrolled ? "#ffffff" : "rgba(46, 82, 136, 0.9)"
@@ -154,7 +156,7 @@ export default function Header() {
                                             <Link
                                                 key={item.id}
                                                 href={item.link}
-                                                className="text-white hover:text-gray-200 transition duration-300 block py-3 border-b border-blue-700"
+                                                className={`${pathname === item.link.split("#")[0] ? "underline underline-offset-4" : ""}text-white hover:text-gray-200 transition duration-300 block py-3 border-b border-blue-700`}
                                                 onClick={() => setMobileMenuOpen(false)}
                                             >
                                                 {item.name}
@@ -172,7 +174,7 @@ export default function Header() {
                                     <a
                                         key={item.id}
                                         href={item.link}
-                                        className={`relative font-medium transition duration-300 px-2 py-1 group text-center`}
+                                        className={`${pathname === item.link.split("#")[0] ? "underline underline-offset-4" : ""} relative font-medium transition duration-300 px-2 py-1 group text-center`}
                                         style={{
                                             color: isScrolled ? COLORS.primary : COLORS.light
                                         }}

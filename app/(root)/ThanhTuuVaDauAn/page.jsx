@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { Award, BookOpen, Briefcase, Users, UserCheck, Code } from 'lucide-react';
 import { usePathname } from 'next/navigation';
-
+import user1 from '@/public/image/user/10_5.png'
 export default function AchievementsPage() {
 
    const pathname = usePathname();
@@ -46,22 +46,22 @@ export default function AchievementsPage() {
 
   const alumni = [
     {
-      name: "Nguyễn Văn A",
-      position: "Giám đốc Kỹ thuật tại Tech Solutions",
-      avatar: "/api/placeholder/80/80",
-      quote: "Kiến thức và kỹ năng thực chiến từ chương trình đào tạo giúp tôi tự tin bước vào thị trường công nghệ và phát triển sự nghiệp."
+      name: "Nhật Mai Sơn",
+      position: "CSV K29I; Giám đốc Trung tâm Khuyến công và Xúc tiến thương mại, Sở Công Thương tỉnh Bắc Kạn",
+      avatar: "image/user/8_3.png",
+      quote: "Kiến thức và kỹ năng thực chiến từ chương trình đào tạo giúp tôi tự tin bước vào thị trường công nghệ và phát triển sự nghiệp.Tôi muốn gửi lời tri ân tới các thầy cô giáo, tới mái trường ĐH Kỹ thuật Công nghiệp, nơi đào tạo cho tôi những kiến thức về khoa học kỹ thuật, về chuyên ngành tự động hóa, đó là những kiến thức vô cùng quý báu để tôi làm hành trang bước vào đời"
     },
     {
-      name: "Trần Thị B",
-      position: "Founder & CEO tại IoT Innovations",
-      avatar: "/api/placeholder/80/80",
-      quote: "Chương trình học đã trang bị cho tôi không chỉ kiến thức chuyên môn mà còn tư duy khởi nghiệp và khả năng giải quyết vấn đề."
+      name: "TS. Đào Duy Sơn",
+      position: "CSV K4-SPKT; đang là nghiên cứu sau tiến sĩ (postdoc) tại ĐH quốc gia Singapore.",
+      avatar: "image/user/11_6.png",
+      quote: "Đại học Kỹ thuật Công nghiệp đã thay đổi cuộc đời tôi, từ một học sinh nông thôn nghèo đến trường Đại học đẳng cấp thế giới"
     },
     {
-      name: "Lê Minh C",
-      position: "Lead Engineer tại Global Tech",
-      avatar: "/api/placeholder/80/80",
-      quote: "Những dự án thực tế trong chương trình học là nền tảng vững chắc giúp tôi thành công trong công việc hiện tại."
+      name: "Nguyễn Văn Sáng",
+      position: "CSV K40CCM6; Trưởng phòng Quản lý Chất lượng, Công ty Samsung Electronics Việt Nam Thái Nguyên",
+      avatar: "image/user/10_5.png",
+      quote: "Trong học tập, công việc cũng như cuộc sống tôi luôn xác định được mục tiêu của mình và cố gắng hoàn thành với quan điểm làm thế nào thì tốt"
     }
   ];
 
@@ -69,17 +69,17 @@ export default function AchievementsPage() {
     {
       title: "Smart Home System",
       description: "Hệ thống nhà thông minh ứng dụng IoT và AI, kiểm soát thiết bị thông qua điện thoại và giọng nói.",
-      image: "/api/placeholder/400/220"
+      image: "image/duan/anh1.jpg"
     },
     {
       title: "TeleHealth Platform",
       description: "Nền tảng chăm sóc sức khỏe từ xa với khả năng kết nối bệnh nhân và bác sĩ thông qua video call độ phân giải cao.",
-      image: "/api/placeholder/400/220"
+      image: "image/duan/anh2.jpg"
     },
     {
       title: "Drone Delivery Network",
       description: "Hệ thống giao hàng tự động sử dụng drone với thuật toán tối ưu đường đi và tiết kiệm năng lượng.",
-      image: "/api/placeholder/400/220"
+      image: "image/duan/anh3.jpg"
     }
   ];
 
